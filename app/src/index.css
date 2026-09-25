@@ -1,0 +1,332 @@
+:root {
+  --background: #ffecdc;
+  --surface: #fffdf8;
+  --text: #20201d;
+  --muted: #66635d;
+  --border: #d8d2c8;
+  --accent: #d45500;
+  --accent-pale: #ffecdc;
+  --accent-dark: #84271f;
+  --Headerbg: #ffdbcb;
+  --colormain: #195838;
+}
+
+
+body {
+  margin: 0rem;
+  font-family: roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+.body {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+
+
+.site-banner {
+  background-color: var(--Headerbg);
+  color: var(--colormain);
+  padding: 1rem;
+
+}
+
+.header-format {
+  padding-right: 10rem;
+  padding-left: 3rem;
+}
+
+.highlight-Border {
+  background-color: var(--Headerbg);
+  border-top: 0.5rem solid var(--accent-dark);
+  border-bottom: 0.5rem solid var(--accent-dark);
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 5.5rem);
+  line-height: 0.95;
+}
+
+.site-header>p:last-child {
+  max-width: 620px;
+  color: #fff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+
+.navul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--Headerbg);
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.navul li {
+  float: left;
+}
+
+.navul a {
+  display: block;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+/* Change the link and background color on hover */
+.navul a:hover {
+  background-color: #25633f;
+  color: white;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 1rem;
+  padding-left: 25%;
+  padding-right: 10%;
+  border-top: 15PX solid var(--accent-dark);
+
+}
+
+.section-heading h2,
+.section-heading p {
+  margin-top: 0;
+  color: #fff;
+}
+
+.section-heading h2 {
+  padding-top: 1rem;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.break {
+  border-bottom: 1rem solid var(--accent)
+}
+
+/* Body Section */
+.textMargin {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.AboutMe {
+  color: var(--background);
+  background-color: var(--colormain);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+
+}
+
+.projectHead {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  color: var(--colormain)
+}
+
+.project-Reel {
+  background-color: var(--Headerbg);
+  border-top: 0.5rem solid var(--accent-dark);
+  border-bottom: 0.5rem solid var(--accent-dark);
+  padding: 0.5rem;
+}
+
+
+.work-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 1.5rem 0 3rem;
+  clear: left;
+}
+
+.work-card-over {
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.25rem solid var(--accent);
+  background-color: var(--accent-pale);
+  color: var(--colormain)
+}
+
+.work-card {
+  min-width: 1rem;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.25rem solid var(--accent);
+  background-color: var(--accent-pale);
+  color: var(--colormain)
+}
+
+.work-card button {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.work-card button :hover {
+  background-color: var(--accent-pale);
+  color: var(--accent);
+}
+
+.work-card button:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+.work-grid :hover span {
+  text-align: center;
+}
+
+
+
+.work-title {
+  text-align: center;
+}
+
+.work-Card--Select {
+  background-color: var(--colormain);
+  color: var(--surface);
+  font-weight: bolder;
+  font-size: medium;
+}
+
+
+.work-card-Nselect {
+  background-color: var(--colormain);
+  color: var(--surface);
+  font-weight: bolder;
+  font-size: medium;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--Headerbg);
+  display: flex;
+  justify-content: center;
+}
+
+.workul {
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.oldProjects {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  color: var(--colormain)
+}
+
+.prevQuals {
+  color: var(--background);
+  background-color: var(--colormain);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.prevQuals-aign {
+  padding-left: 1.5rem;
+}
+
+
+.prevQualsElement {
+  padding: 10px;
+  margin-left: 2rem;
+}
+
+.gallery {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  color: var(--colormain)
+}
+
+
+
+/* Footer */
+
+.pre-footer {
+  padding: 2rem;
+  background-color: var(--background);
+  padding: 2rem;
+  border-bottom: 1rem solid var(--accent-dark);
+}
+
+.foot {
+  background-color: var(--colormain);
+  color: white;
+  padding: 2rem;
+}
+
+
+.contactMe {
+  color: var(--background);
+  background-color: var(--colormain);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.ContactMeGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 1rem;
+}
+
+.ContactMeElement {
+  padding: 10px;
+}
+
+.ContactMeElement a {
+  color: white;
+}
+
+.sub-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+
+}
